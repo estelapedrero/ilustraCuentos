@@ -1,0 +1,39 @@
+.navMenu{
+    height: 10%;
+    border: solid 3px red;
+    margin: 1%;
+    padding:1%;
+}
+.main {
+    position:relative;
+}
+.menu{
+    width: 20%;
+    border: solid 3px red;
+    display: inline-block;
+    margin: 1%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.escena {
+    height: 500px;
+    width: 1000px;
+    border: solid 5px black;
+    display: inline-block;
+    margin: 1%;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.trialBox {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+.stageT {
+    height:60px;
+    width: 120px;
+}
+
