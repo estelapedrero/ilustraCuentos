@@ -22,9 +22,6 @@
     border: solid 5px black;
     display: inline-block;
     margin: 1%;
-    position: absolute;
-    top:0;
-    right:0;
 }
 
 .trialBox {
