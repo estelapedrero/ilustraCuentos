@@ -1,5 +1,14 @@
-.navbar-fixed-top{
-	margin-top:20px;
+#top-nav{
+	background: #eee;
+	padding: 10px 20px;
+	margin: 10px 0;
 
+	div{
+		margin-right: 20px;
+		display: inline-block;
+	}
+	a{
+		float: left;
+		margin-right: 10px;
+	}
 }
-
