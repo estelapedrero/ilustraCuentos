@@ -1,14 +1,20 @@
 #stage {
 	list-style-type: none;
-	border: solid 3px black;
+	border: solid 3px #F25A0F;
 	height:500px;
+	
 }
 #pag-menu {
-	background-color: blue;
+	color: #FFC400;
+	background-color: #1F1659;
 }
 #dibujos{
 	list-style-type: none;
 	li{
 	margin:10px;
 	}
+}
+.main-stage{
+	background-image: url('back-00.png');
+	background-size:cover;
 }

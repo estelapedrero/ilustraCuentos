@@ -19,19 +19,20 @@
 				</div>
 			</div>
 			<div class="row">
-				<ul id="dibujos" class="sortable-list draggable">
-					<li><div><%= image_tag("back-01.png", alt: "01", class: 'stage') %></div></li>
-					<li><div><%= image_tag("back-02.png", alt: "02", class: 'stage') %></div></li>
-					<li><div><%= image_tag("back-03.png", alt: "03", class: 'stage') %></div></li>
-					<li><div><%= image_tag("back-04.png", alt: "04", class: 'stage') %></div></li>
-					<li><div><%= image_tag("back-05.png", alt: "05", class: 'stage') %></div></li>
-					<li><div><%= image_tag("back-06.png", alt: "06", class: 'stage') %></div></li>
-					<li><div><%= image_tag("botas.png", alt: "botas", class: 'tools') %></div></li>
+				<ul id="dibujos" >
+					<li><div><%= image_tag("back-01.png", alt: "01", class: 'stages') %></div></li>
+					<li><div><%= image_tag("back-02.png", alt: "02", class: 'stages') %></div></li>
+					<li><div><%= image_tag("back-03.png", alt: "03", class: 'stages') %></div></li>
+					<li><div><%= image_tag("back-04.png", alt: "04", class: 'stages') %></div></li>
+					<li><div><%= image_tag("back-05.png", alt: "05", class: 'stages') %></div></li>
+					<li><div><%= image_tag("back-06.png", alt: "06", class: 'stages') %></div></li>
 				</ul>
+				<div class="sortable-list"><%= image_tag("botas.png", alt: "botas", class: 'tools draggable') %></div>
+				
 			</div>
 		</div>	
 
-		<div id="stage" class="sortable-list col-xs-8 draggable">
+		<div id="stage" class="sortable-list col-xs-8 main-stage">
 		</div>
 
 		<div id="pag-menu" class="col-xs-1">páginas
