@@ -3,6 +3,7 @@ Rails.application.routes.draw do
                      path_names:  { sign_in: 'login', sign_up: 'registro' },
                      controllers: { sessions: 'users/sessions'}
   get '/users/:id', to: 'users#show'
+  get '/books', to: 'books#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

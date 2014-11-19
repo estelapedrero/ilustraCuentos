@@ -1,14 +1,28 @@
+#header{
+	background: #1f1659;
+	padding-top:10px;
+}
 #top-nav{
-	background: #eee;
-	padding: 10px 20px;
-	margin: 10px 0;
+	padding: 10px 0 5px 0;
 
 	div{
-		margin-right: 20px;
+		background: #1d1440;
 		display: inline-block;
+		color: #ffc400;
+		padding:5px;
+		border-radius:10px;
+		margin:0 10px;
 	}
 	a{
 		float: left;
-		margin-right: 10px;
+		padding:0 15px;
+		color:#ffc400;
+		&:visited :hover{
+			text-decoration:none;
+		}
+		&:hover{
+			color:#f25a0f;
+			text-decoration:none;
+		}
 	}
 }

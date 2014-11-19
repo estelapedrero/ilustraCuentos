@@ -1,8 +1,12 @@
+section{
+	margin:20px 0 5px 0;
+}
 #stage {
 	list-style-type: none;
-	border: solid 3px #F25A0F;
+	border: solid 5px #F25A0F;
 	height:500px;
 	overflow:auto;
+	border-radius:20px;
 }
 #pag-menu {
 	color: #FFC400;
@@ -25,4 +29,8 @@
 	height:50px;
 	width:50px;
 	background-color: blue;
+}
+.boton {
+	margin-right:0;
+	margin-left:0;
 }
