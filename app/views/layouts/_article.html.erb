@@ -1,3 +1,4 @@
+
 <div class="row">
 	<article>
 		<div id="dib-menu" class="col-xs-3">
@@ -27,12 +28,18 @@
 					<li><div><%= image_tag("back-05.png", alt: "05", class: 'stages') %></div></li>
 					<li><div><%= image_tag("back-06.png", alt: "06", class: 'stages') %></div></li>
 				</ul>
-				<div class="sortable-list"><%= image_tag("botas.png", alt: "botas", class: 'tools draggable') %></div>
+				<div class="">
+					<%= image_tag("botas.png", alt: "botas", class: 'tools draggable') %>
+					<%= image_tag("gorro.png", alt: "gorro", class: 'tools draggable') %>
+					<%= image_tag("camara.png", alt: "camara", class: 'tools draggable') %>
+				</div>
 				
 			</div>
 		</div>	
 
 		<div id="stage" class="sortable-list col-xs-8 main-stage">
+			<p id="posx" class="coords"></p>
+			<p id="posy" class="coords"></p>
 		</div>
 
 		<div id="pag-menu" class="col-xs-1">páginas

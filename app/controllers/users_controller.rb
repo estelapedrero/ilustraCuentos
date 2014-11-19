@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   before_action :authenticate_user!, only: :show
 
   def show
-    @user = User.find(params[:id])
+    redirect_to action: 'index', controller: 'users' unless @user = User.find(params[:id])
+   	flash[:error] = "El usuario no existe.¡Registrate!"
     render 'user'
   end
 

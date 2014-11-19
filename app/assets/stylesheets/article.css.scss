@@ -2,7 +2,7 @@
 	list-style-type: none;
 	border: solid 3px #F25A0F;
 	height:500px;
-	
+	overflow:auto;
 }
 #pag-menu {
 	color: #FFC400;
@@ -17,4 +17,12 @@
 .main-stage{
 	background-image: url('back-00.png');
 	background-size:cover;
+}
+.tools{
+	z-index:5;
+}
+.coords{
+	height:50px;
+	width:50px;
+	background-color: blue;
 }
