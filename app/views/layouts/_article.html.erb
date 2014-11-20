@@ -1,4 +1,3 @@
-
 <div class="row">
 	<section>
 		<div id="dib-menu" class="col-xs-3">
@@ -24,14 +23,21 @@
 					<li><div><%= image_tag("back-01.png", alt: "01", class: 'stages') %></div></li>
 					<li><div><%= image_tag("back-02.png", alt: "02", class: 'stages') %></div></li>
 					<li><div><%= image_tag("back-03.png", alt: "03", class: 'stages') %></div></li>
-					<li><div><%= image_tag("back-04.png", alt: "04", class: 'stages') %></div></li>
-					<li><div><%= image_tag("back-05.png", alt: "05", class: 'stages') %></div></li>
 					<li><div><%= image_tag("back-06.png", alt: "06", class: 'stages') %></div></li>
 				</ul>
-				<div class="">
-					<%= image_tag("botas.png", alt: "botas", class: 'tools draggable') %>
-					<%= image_tag("gorro.png", alt: "gorro", class: 'tools draggable') %>
-					<%= image_tag("camara.png", alt: "camara", class: 'tools draggable') %>
+				<div class="tools-box">
+					<div class="draggable tools">
+						<%= image_tag("botas.png", alt: "botas") %>
+						<div class="delete-button"><p class="delete centrary">x</p></div>
+					</div>
+					<div class="draggable tools">
+					<%= image_tag("gorro.png", alt: "gorro") %>
+						<div class="delete-button"><p class="delete centrary">x</p></div>
+					</div>
+					<div class="draggable tools">
+					<%= image_tag("camara.png", alt: "camara") %>
+						<div class="delete-button"><p class="delete centrary">x</p></div>
+					</div>
 				</div>
 				
 			</div>

@@ -24,6 +24,19 @@ section{
 }
 .tools{
 	z-index:5;
+	position:relative;
+}
+.delete-button{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color: white;
+	border: solid 2px #1d1440;
+	border-radius:50%;
+	height:22px;
+	width:22px;
+	padding:2px;
+	text-align:center;
 }
 .coords{
 	height:50px;
