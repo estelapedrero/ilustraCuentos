@@ -11,21 +11,21 @@
 					<div id="top-nav" class="col-xs-12">
 						<% if user_signed_in? %>	
 							<div id="book-nav">
-								<%= link_to 'mis libros' %></li>	
-								<%= link_to 'nuevo libro' %></li>	
+								<%= link_to 'mis libros' %>	
+								<%= link_to 'nuevo libro' %>	
 							</div>
 						<% end %>
 						<div id="info-nav">
-							<%= link_to 'info' %></li>
-							<%= link_to 'explora' %></li>
+							<%= link_to 'info' %>
+							<%= link_to 'explora' %>
 						</div>
 						<div id="user-nav">
 							<% if user_signed_in? %>
 							<%= link_to current_user.name, edit_user_registration_path  %>
 								<%= link_to 'cerrar sesión', destroy_user_session_path, method: 'DELETE' %>
 							<% else %>
-								<%= link_to 'entra', new_user_session_path %></li>	
-								<%= link_to 'registrate', new_user_registration_path %></li>
+								<%= link_to 'entra', new_user_session_path %>	
+								<%= link_to 'registrate', new_user_registration_path %>
 							<% end %>
 						</div>
 						
