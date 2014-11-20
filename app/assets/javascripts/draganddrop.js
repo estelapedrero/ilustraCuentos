@@ -5,7 +5,10 @@ $(function() {
     	drag: function(event, ui){
       		$("#posx").text(ui.position.left);
       		$("#posy").text(ui.position.top);
-  		}
+  		},
+      stop: function(){
+        $(".main-stage").append(event.target);
+      }
     });
   });
 
