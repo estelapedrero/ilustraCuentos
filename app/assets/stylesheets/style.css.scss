@@ -1,3 +1,4 @@
+@import "variables";
 .navMenu{
     height: 10%;
     border: solid 3px red;
@@ -26,14 +27,14 @@
 .trialBox {
     height: 100px;
     width: 100px;
-    background-color: yellow;
+    background-color: $yellow;
 }
 .stages {
     height:100px;
     width: 180px;
 }
 .login{
-    background-color:#ffc400;
+    background-color: $yellow;
     border-radius:20px;
     border: solid 5px #F25A0F;
     margin:50px auto;
