@@ -7,17 +7,20 @@
 						<%= image_tag("back-menu.png", alt: "back-menu") %>
 					</button>
 				</div>
+
 				<div class="col-xs-3 boton">
 					<button type="button" class="btn btn-default">
 						<%= image_tag("char-menu.png", alt: "char-menu") %>
 					</button>
 				</div>
+
 				<div class="col-xs-3 boton">
 					<button type="button" class="btn btn-default">
 						<%= image_tag("tool-menu.png", alt: "tool-menu") %>
 					</button>
 				</div>
 			</div>
+
 			<div class="row">
 				<ul id="dibujos" >
 					<li><div><%= image_tag("back-01.png", alt: "01", class: 'stages') %></div></li>
@@ -26,24 +29,26 @@
 					<li><div><%= image_tag("back-06.png", alt: "06", class: 'stages') %></div></li>
 				</ul>
 				<div class="tools-box">
-					<div class="draggable tools">
-						<%= image_tag("botas.png", alt: "botas") %>
-						<div class="delete-button"><p class="delete centrary">x</p></div>
-					</div>
-					<div class="draggable tools">
-					<%= image_tag("gorro.png", alt: "gorro") %>
-						<div class="delete-button"><p class="delete centrary">x</p></div>
-					</div>
-					<div class="draggable tools">
-					<%= image_tag("camara.png", alt: "camara") %>
-						<div class="delete-button"><p class="delete centrary">x</p></div>
+
+					<div class="col-xs-1 tools-box">
+
+						<div class="draggable tools">
+							<%= image_tag("botas.png", alt: "botas") %>
+							<div class="delete-button"><p class="delete centrary">x</p></div>
+						</div>
+						<div class="draggable tools">
+						<%= image_tag("gorro.png", alt: "gorro") %>
+							<div class="delete-button"><p class="delete centrary">x</p></div>
+						</div>
+						<div class="draggable tools">
+						<%= image_tag("camara.png", alt: "camara") %>
+							<div class="delete-button"><p class="delete centrary">x</p></div>
+						</div>
 					</div>
 				</div>
-				
-			</div>
-		</div>	
-
-		<div id="stage" class="sortable-list col-xs-8 main-stage">
+			</div>	
+		</div>
+		<div id="stage" class="col-xs-8 main-stage">
 			<p id="posx" class="coords"></p>
 			<p id="posy" class="coords"></p>
 		</div>
