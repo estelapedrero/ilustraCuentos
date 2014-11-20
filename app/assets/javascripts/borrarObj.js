@@ -5,14 +5,8 @@ var dibujo = document.getElementsByClassName('tools');
 
 for (i=0; i<equis.length; i++){
 	equis[i].addEventListener('click',deleteObj.bind(this,i));
-	equis[i].addEventListener('click',addObj.bind(this,i))
 };
 
 function deleteObj(i){
 	equis[i].parentNode.remove();
-};
-
-function addObj(i){
-	var caja = toolsbox.createElement('div');
-	caja.appendChild(equis[i].parentNode);
 };

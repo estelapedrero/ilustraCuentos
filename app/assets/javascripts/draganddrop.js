@@ -7,4 +7,10 @@ $(function() {
       		$("#posy").text(ui.position.top);
   		}
     });
+    $(".main-stage").droppable({
+      accept: ".draggable",
+      drop: function(event,ui){
+        $(this).append($(ui.draggable).clone());
+      };
+    });
   });
