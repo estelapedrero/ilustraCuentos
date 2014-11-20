@@ -8,5 +8,9 @@ for (i=0; i<equis.length; i++){
 };
 
 function deleteObj(i){
-	equis[i].parentNode.remove();
+	equis[i].parentNode.setAttribute('style', 'position:relative;');
 };
+
+
+
+
