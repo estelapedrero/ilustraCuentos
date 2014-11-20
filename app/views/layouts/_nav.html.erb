@@ -3,7 +3,7 @@
 		<div id="header" class="col-xs-12">
 			<div class="row">
 				<div id="logo" class="col-xs-3">
-					<%= image_tag("logo.png", alt: "logo-ilustra") %>
+					<%= link_to image_tag("logo.png"), root_path %>
 				</div>
 			</div>
 			<div class="row">
@@ -11,21 +11,21 @@
 					<div id="top-nav" class="col-xs-12">
 						<% if user_signed_in? %>	
 							<div id="book-nav">
-								<a href="">mis libros</a>	
-								<a href="">nuevo libro</a>	
+								<%= link_to 'mis libros' %></li>	
+								<%= link_to 'nuevo libro' %></li>	
 							</div>
 						<% end %>
 						<div id="info-nav">
-							<a href="">info</a>	
-							<a href="">explora</a>	
+							<%= link_to 'info' %></li>
+							<%= link_to 'explora' %></li>
 						</div>
 						<div id="user-nav">
 							<% if user_signed_in? %>
-								<a href=""><%= current_user.name %></a>	
-								<a href="">cerrar sesión</a>
+							<%= link_to current_user.name, edit_user_registration_path  %>
+								<%= link_to 'cerrar sesión', destroy_user_session_path, method: 'DELETE' %>
 							<% else %>
-								<a href="">entra</a>	
-								<a href="">registrate</a>
+								<%= link_to 'entra', new_user_session_path %></li>	
+								<%= link_to 'registrate', new_user_registration_path %></li>
 							<% end %>
 						</div>
 						
