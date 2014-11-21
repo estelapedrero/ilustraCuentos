@@ -3,14 +3,14 @@ section{
 }
 #stage {
 	list-style-type: none;
-	border: solid 5px #F25A0F;
+	border: solid 5px $orange;
 	height:500px;
 	overflow:auto;
 	border-radius:20px;
 }
 #pag-menu {
-	color: #FFC400;
-	background-color: #1F1659;
+	color: $yellow;
+	background-color: $blue;
 }
 #dibujos{
 	list-style-type: none;
@@ -23,7 +23,6 @@ section{
 	background-size:cover;
 }
 .tools{
-	z-index:5;
 	position:relative;
 }
 .delete-button {
@@ -31,18 +30,23 @@ section{
 	top:0;
 	left:0;
 	background-color: white;
-	border: solid 2px #1d1440;
+	border: solid 2px $navyblue;
 	border-radius:50%;
 	height:22px;
 	width:22px;
 	padding:2px;
 	text-align:center;
 }
-.coords{
-	height:50px;
-	width:50px;
-	background-color: blue;
-}
 .boton{
 	padding:0;
+}
+.stages{
+	height:100px;
+	width: 180px;
+}
+.savebutton{
+	background-color: $yellow;
+	color:$navyblue;
+	border-radius:10px;
+	width:100px;
 }

@@ -1,0 +1,16 @@
+body {
+	background-color: $navyblue;
+}
+.btn{
+	color:$navyblue;
+	background-color:$yellow;
+	&:hover{
+		background-color:$orange;
+	}
+}
+.login{
+    background-color: $yellow;
+    border-radius:20px;
+    border: solid 5px #F25A0F;
+    margin:50px auto;
+}

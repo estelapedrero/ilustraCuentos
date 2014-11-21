@@ -1,14 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "variables";
-
-body { 
-	background-color: $navyblue;
-}
-.btn{
-	color:#1d1440;
-	background-color:#ffc400;
-	&:hover{
-		background-color:#f25a0f;
-	}
-}
+@import "style";
+@import "nav";
+@import "stage";
+@import "welcome";

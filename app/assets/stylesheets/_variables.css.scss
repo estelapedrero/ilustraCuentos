@@ -1,0 +1,29 @@
+$navyblue: #1D1440;
+$blue: #1F1659;
+$purple: #4E085E;
+$orange: #F25A0F;
+$yellow: #FFC400;
+
+$black: #000000;
+$white: #ffffff;
+$gray-darkest: #272727;
+$gray-darker: #4d4d4d;
+$gray-dark: #737373;
+$gray-light: #999999;
+$gray-lighter: #bfbfbd;
+$gray-lightest: #e6e6e3;
+$gray-more-lightest: #f5f5f2;
+$gray-most-lightest: #fafaf7;
+$gray-mostest-lightest: #fcfcfc;
+
+@font-face {
+    font-family: 'young__beautifulregular';
+    src: url('young__beautiful-webfont.eot');
+    src: url('young__beautiful-webfont.eot?#iefix') format('embedded-opentype'),
+         url('young__beautiful-webfont.woff2') format('woff2'),
+         url('young__beautiful-webfont.woff') format('woff'),
+         url('young__beautiful-webfont.ttf') format('truetype'),
+         url('young__beautiful-webfont.svg#young__beautifulregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,14 +1,14 @@
 #header{
-	background: #1f1659;
+	background: $blue;
 	padding-top:10px;
 }
 #top-nav{
 	padding: 10px 0 5px 0;
 
 	div{
-		background: #1d1440;
+		background: $navyblue;
 		display: inline-block;
-		color: #ffc400;
+		color: $yellow;
 		padding:5px;
 		border-radius:10px;
 		margin:0 10px;
@@ -16,12 +16,12 @@
 	a{
 		float: left;
 		padding:0 15px;
-		color:#ffc400;
+		color:$yellow;
 		&:visited :hover{
 			text-decoration:none;
 		}
 		&:hover{
-			color:#f25a0f;
+			color:$orange;
 			text-decoration:none;
 		}
 	}

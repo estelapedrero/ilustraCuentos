@@ -11,10 +11,7 @@
  * file per style scope.
  *
 
-
- *= require main 
- *= require_self
+ *= require main
  *= require jquery-ui
- *= require_tree .
  */
 
