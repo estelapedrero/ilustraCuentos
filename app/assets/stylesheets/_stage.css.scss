@@ -47,6 +47,9 @@ section{
 .savebutton{
 	background-color: $yellow;
 	color:$navyblue;
-	border-radius:10px;
-	width:100px;
+	border-radius:50%;
+	padding:0;
+	height:40px;
+	width:40px;
+	font-weight:bold;
 }

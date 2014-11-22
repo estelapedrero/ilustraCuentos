@@ -4,6 +4,7 @@ Rails.application.routes.draw do
                      controllers: { sessions: 'users/sessions'}
   get '/users/:id', to: 'users#show'
   get '/books', to: 'books#index'
+  get '/info', to: 'home#info'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

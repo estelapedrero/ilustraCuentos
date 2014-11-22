@@ -1,9 +1,14 @@
 #header{
 	background: $blue;
-	padding-top:10px;
+	padding-top:20px;
+}
+nav{
+	float:right;
+	margin-top: -35px;
 }
 #top-nav{
-	padding: 10px 0 5px 0;
+	padding: 10px;
+	font-size:18px;
 
 	div{
 		background: $navyblue;
@@ -14,7 +19,6 @@
 		margin:0 10px;
 	}
 	a{
-		float: left;
 		padding:0 15px;
 		color:$yellow;
 		&:visited :hover{
