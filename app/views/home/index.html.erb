@@ -1,11 +1,13 @@
 <% if user_signed_in? %>
-	<div class="row  col-xs-offset-4">
-		<div class="col-xs-6">
+	<div class="row  col-xs-offset-3">
+		<div class="col-xs-7">
 			<h2>¡Bienvenid@ <%= current_user.name %>!!</h2>
 			<div class="login">							
 				<h3>¿Qué te apetece hacer hoy?</h3>
-				<div class="welcome-button"><%= link_to 'biblioteca' %></div>
-				<div class="welcome-button"><%= link_to 'nuevo cuento', books_path %></div>
+				<div class="welcome-button">
+					<%= icon('paint-brush') %> <%= link_to 'nuevo cuento', books_path %>
+					<%= icon('book') %> <%= link_to 'biblioteca' %>
+				</div>				
 			</div>
 		</div>
 	</div>
@@ -15,14 +17,14 @@
 	<div id="crea" class="row">
 		<div class="col-xs-12 intro">
 			<h1>crea</h1>
-			<%= link_to icon('chevron-down'), id: 'juega' %>
+			<a href="#juega"><%= icon('chevron-circle-down') %></a>
 		</div>
 	</div>
 
 	<div id="juega" class="row">
 		<div class="col-xs-12 intro">
 			<h1>juega</h1>
-			<%= link_to icon('chevron-down'), id: 'ilustra' %>
+			<a href="#ilustra"><%= icon('chevron-circle-down') %></a>
 		</div>
 	</div>
 
@@ -34,8 +36,9 @@
 			<div class="login welcome-button"><%= link_to 'entra', new_user_session_path %></div>
 			<div class="login welcome-button"><%= link_to 'registrate', new_user_registration_path %></div>
 			<div class="login welcome-button"><%= link_to 'explora' %></div>
+		
+		<a href="#top-nav"><%= icon('chevron-circle-up') %></a>
 		</div>
-		<%= link_to icon('chevron-up'), id: 'header' %>
 	</div>
 
 <% end %>

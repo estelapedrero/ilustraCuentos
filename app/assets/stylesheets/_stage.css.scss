@@ -5,8 +5,8 @@ section{
 	list-style-type: none;
 	border: solid 5px $orange;
 	height:500px;
-	overflow:auto;
 	border-radius:20px;
+	font-size:14px;
 }
 #pag-menu {
 	color: $yellow;
@@ -24,15 +24,16 @@ section{
 }
 .tools{
 	position:relative;
+	padding-left:25px;
 }
 .delete-button {
 	background-color: white;
 	border: solid 2px $navyblue;
+	color:$navyblue;
 	border-radius:50%;
 	height:22px;
 	width:22px;
-	padding:2px;
-	text-align:center;
+	padding:0 3px;
 }
 .boton{
 	padding:0;

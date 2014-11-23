@@ -1,21 +1,21 @@
 <div class="row col-xs-offset-4">
-<h2>¡ilustra!</h2>
+<h2>¡ ilustra!</h2>
 </div>
 <div class="row  col-xs-offset-4">
 <div class="login col-xs-6">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="">
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div class="">
+  <div class="field">
     <%= f.label :contraseña %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="">
+    <div class="field">
       <%= f.check_box :remember_me %>
       <%= f.label :recuérdame %>
     </div>

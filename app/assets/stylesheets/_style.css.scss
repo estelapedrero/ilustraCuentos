@@ -30,25 +30,7 @@ input{
 		background-color:$orange;
 	}
 }
-.login{
-    color:$navyblue;
-    background-color: $yellow;
-    border-radius:20px;
-    border: solid 5px #F25A0F;
-    margin:10px auto;
-    font-size:18px;
-    a{
-    	color:$navyblue;
-    	&:hover{
-    		text-decoration:none;
-    	}
-    }
-    h3{
-        font-size:27px;
-        text-align:center;
-        font-weight:bold;
-    }
-}
+
 .info-text {
     text-align:center;
 }

@@ -21,7 +21,7 @@
 						</div>
 						<div id="user-nav">
 							<% if user_signed_in? %>
-							<%= link_to current_user.name, edit_user_registration_path  %>
+								<%= link_to current_user.name, edit_user_registration_path  %>
 								<%= link_to 'cerrar sesión', destroy_user_session_path, method: 'DELETE' %>
 							<% else %>
 								<%= link_to 'entra', new_user_session_path %>	
