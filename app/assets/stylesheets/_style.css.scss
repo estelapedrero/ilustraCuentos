@@ -17,7 +17,11 @@ input{
     }
 }
 .intro{
+    text-align:center;
     height:500px;
+    h1{
+        font-size:90px;
+    }  
 }
 .btn{
 	color:$navyblue;
@@ -44,4 +48,7 @@ input{
         text-align:center;
         font-weight:bold;
     }
+}
+.info-text {
+    text-align:center;
 }

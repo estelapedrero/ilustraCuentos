@@ -43,4 +43,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'jquery-ui-rails', '~> 5.0.2'
 gem 'devise'
-
+gem 'font-awesome-sass', '~> 4.2.0'

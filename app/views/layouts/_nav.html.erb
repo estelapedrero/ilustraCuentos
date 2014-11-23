@@ -11,8 +11,8 @@
 					<div id="top-nav" class="col-xs-12">
 						<% if user_signed_in? %>	
 							<div id="book-nav">
-								<%= link_to 'mis libros' %>	
-								<%= link_to 'nuevo libro' %>	
+								<%= link_to 'mis cuentos' %>	
+								<%= link_to 'nuevo cuento' %>	
 							</div>
 						<% end %>
 						<div id="info-nav">
@@ -25,7 +25,7 @@
 								<%= link_to 'cerrar sesión', destroy_user_session_path, method: 'DELETE' %>
 							<% else %>
 								<%= link_to 'entra', new_user_session_path %>	
-								<%= link_to 'registrate', new_user_registration_path %>
+								<%= link_to 'regístrate', new_user_registration_path %>
 							<% end %>
 						</div>	
 					</div>
