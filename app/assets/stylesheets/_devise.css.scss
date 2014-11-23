@@ -1,3 +1,6 @@
+.centrado{
+    text-align:center;
+}
 .login{
     color:$navyblue;
     background-color: $yellow;
@@ -6,7 +9,7 @@
     margin:6px auto;
     font-size:18px;
     padding:10px;
-    text-align:center;
+    
     a{
     	color:$navyblue;
     	&:hover{
@@ -15,7 +18,7 @@
     }
     h3{
         font-size:27px;
-    
+        text-align:center;
         font-weight:bold;
     }
 }

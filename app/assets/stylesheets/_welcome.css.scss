@@ -4,6 +4,12 @@
 	padding:10px;
 	border-radius: 10px;
 	text-align:center;
-	display:inline-block;
 	margin:10px;
+	div{
+		display:inline-block;
+		margin:0 10px;
+		i{
+			font-size:36px;
+		}
+	}
 }

@@ -2,11 +2,15 @@
 	<div class="row  col-xs-offset-3">
 		<div class="col-xs-7">
 			<h2>¡Bienvenid@ <%= current_user.name %>!!</h2>
-			<div class="login">							
+			<div class="login centrado">							
 				<h3>¿Qué te apetece hacer hoy?</h3>
 				<div class="welcome-button">
-					<%= icon('paint-brush') %> <%= link_to 'nuevo cuento', books_path %>
-					<%= icon('book') %> <%= link_to 'biblioteca' %>
+					<div>
+						<%= icon('paint-brush') %> <%= link_to 'nuevo cuento', books_path %>
+					</div>
+					<div>
+						<%= icon('book') %> <%= link_to 'biblioteca', books_path %>
+					</div>
 				</div>				
 			</div>
 		</div>

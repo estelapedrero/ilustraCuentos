@@ -4,7 +4,6 @@ section{
 #stage {
 	list-style-type: none;
 	border: solid 5px $orange;
-	height:500px;
 	border-radius:20px;
 	font-size:14px;
 }
@@ -18,9 +17,15 @@ section{
 	margin:10px;
 	}
 }
+.wrapper{
+	padding-bottom: 44%; /* 3:2 */
+	position: relative;
+}
 .main-stage{
 	background-image: url('back-00.png');
 	background-size:cover;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
 }
 .tools{
 	position:relative;
