@@ -6,7 +6,6 @@ section{
 	border: solid 3px $orange;
 	border-radius:15px;
 	font-size:14px;
-	position: relative;
 }
 .stage-margin{
 	margin:0 20px;
@@ -18,7 +17,7 @@ section{
       height: 200px;
     }
 
-    .stage-element:hover{
+.stage-element:hover{
       opacity: 0.5;
     }
 #pag-menu {
@@ -59,7 +58,7 @@ section{
 	top: 0; bottom: 0; left: 0; right: 0;
 }
 .delete-button {
-	color:$yellow;
+	color:#ddd;
 	font-size:24px;
 	&:hover{
 		color:$navyblue;
@@ -97,5 +96,11 @@ section{
 	img{
 		width:40px;
 		height:40px;
+	}
+}
+#menu-characters{
+	cursor:pointer !important;
+	&:hover{
+		opacity:0.5;
 	}
 }
