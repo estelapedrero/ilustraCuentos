@@ -22,6 +22,7 @@ $(function() {
 			console.log(ui.offset.top);
             if (!ui.draggable.hasClass("draggable"))
                 var dropped = $(ui.draggable).clone().addClass("draggable").draggable();
+                console.log(dropped);
                 dropped.css({'left': ui.position.left, 'top': ui.position.top});         
 	   }
     });
