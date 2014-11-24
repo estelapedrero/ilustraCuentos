@@ -1,0 +1,70 @@
+<div id="dib-menu" class="col-xs-3">
+	<div class="row">
+		<div class="col-xs-4 boton btn-group" role="group">
+			<button type="button" class="btn btn-default dropdown-toggle btn-menu-objetos" data-toggle="dropdown" aria-expanded="false">
+				<%= image_tag("back-menu.png", alt: "back-menu") %>
+				 <span class="caret"></span>
+			</button>
+			<ul id="dibujos" class="dropdown-menu" role="menu">
+				<li><div><%= image_tag("back-01.png", alt: "01", class: 'stages') %></div></li>
+				<li><div><%= image_tag("back-02.png", alt: "02", class: 'stages') %></div></li>
+				<li><div><%= image_tag("back-03.png", alt: "03", class: 'stages') %></div></li>
+				<li><div><%= image_tag("back-06.png", alt: "06", class: 'stages') %></div></li>
+			</ul>
+		</div>
+
+		<div class="col-xs-4 boton btn-group" role="group">
+			<button type="button" class="btn btn-default dropdown-toggle btn-menu-objetos" data-toggle="dropdown" aria-expanded="false">
+				<%= image_tag("char-menu.png", alt: "char-menu") %>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu tools-box" role="menu">
+				<li>
+					<div class="draggable tools">
+						<div class="delete-button"><%= icon('close') %></div>
+						<%= image_tag("back-24.png", alt: "gato") %>
+					</div>
+				</li>
+				<li>
+					<div class="draggable tools">
+						<div class="delete-button"><%= icon('close') %></div>
+						<%= image_tag("back-25.png", alt: "boy") %>
+					</div>
+				</li>
+				<li>
+					<div class="draggable tools">
+						<div class="delete-button"><%= icon('close') %></div>
+						<%= image_tag("back-26.png", alt: "girl") %>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-xs-4 boton btn-group" role="group">
+			<button type="button" class="btn btn-default dropdown-toggle btn-menu-objetos" data-toggle="dropdown" aria-expanded="false">
+				<%= image_tag("tool-menu.png", alt: "tool-menu") %>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu tools-box" role="menu">
+				<li>
+					<div class="draggable tools">
+						<div class="delete-button"><%= icon('close') %></div>
+						<%= image_tag("botas.png", alt: "botas") %>
+					</div>
+				</li>
+				<li>
+					<div class="draggable tools">
+						<div class="delete-button"><%= icon('close') %></div>
+						<%= image_tag("gorro.png", alt: "gorro") %>						
+					</div>
+				</li>
+				<li>
+					<div class="draggable tools">
+						<div class="delete-button"><%= icon('close') %></div>
+						<%= image_tag("camara.png", alt: "camara") %>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
