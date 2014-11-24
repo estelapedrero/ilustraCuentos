@@ -1,12 +1,12 @@
 <% if user_signed_in? %>
-	<div class="row  col-xs-offset-3">
-		<div class="col-xs-7">
+	<div class="row">
+		<div class="col-xs-6   col-xs-offset-3">
 			<h2>¡Bienvenid@ <%= current_user.name %>!!</h2>
 			<div class="login centrado">							
 				<h3>¿Qué te apetece hacer hoy?</h3>
 				<div class="welcome-button">
 					<div>
-						<%= icon('paint-brush') %> <%= link_to 'nuevo cuento', books_path %>
+						<%= icon('paint-brush') %> <%= link_to 'nuevo cuento', new_book_path %>
 					</div>
 					<div>
 						<%= icon('book') %> <%= link_to 'biblioteca', books_path %>

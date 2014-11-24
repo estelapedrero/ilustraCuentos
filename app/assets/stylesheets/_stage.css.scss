@@ -1,24 +1,35 @@
 section{
-	margin:20px 0 5px 0;
+	margin:10px 0;
 }
 #stage {
 	list-style-type: none;
 	border: solid 5px $orange;
 	border-radius:20px;
 	font-size:14px;
+	margin:0 10px;
 }
 #pag-menu {
 	color: $yellow;
 	background-color: $blue;
+	text-align:center;
+	margin-top:20px;
+	button{
+		margin:2px;
+	}
 }
-#dibujos{
+.tab-pane{
+	ul{
+	background-color:white;
 	list-style-type: none;
+	font-size:14px;
+	}
 	li{
-	margin:10px;
+	padding:10px;
+	display:inline-block;
 	}
 }
 .wrapper{
-	padding-bottom: 44%; /* 3:2 */
+	padding-bottom: 50%; /* 3:2 */
 	position: relative;
 }
 .main-stage{
@@ -26,10 +37,6 @@ section{
 	background-size:cover;
 	position: absolute;
 	top: 0; bottom: 0; left: 0; right: 0;
-}
-.tools{
-	position:relative;
-	padding-left:25px;
 }
 .delete-button {
 	background-color: white;
@@ -40,9 +47,19 @@ section{
 	width:22px;
 	padding:0 3px;
 }
-.boton{
-	padding:0;
+.add-text{
+		font-size:16px;
+	textarea{
+		color:$navyblue;
+		margin-top:10px;
+		width:100%;
+	}
+
 }
+#page-content{
+	width:90%;
+}
+
 .stages{
 	height:100px;
 	width: 180px;
