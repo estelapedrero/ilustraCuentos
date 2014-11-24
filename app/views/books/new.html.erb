@@ -1,0 +1,10 @@
+<div class="col-xs-4 col-xs-offset-4">
+<h1>titulo del libro</h1>
+<%= form_for @book do |f| %>
+  <div class="field">
+    <%= f.label :título %><br />
+    <%= f.text_field :title, autofocus: true %>
+  </div>
+  	<%= f.submit "empieza!" %>
+<% end %>
+</div>

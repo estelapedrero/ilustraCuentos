@@ -1,24 +1,33 @@
 <div id="dib-menu" class="col-xs-3">
 	<div class="row">
-		<div class="col-xs-4 boton btn-group" role="group">
-			<button type="button" class="btn btn-default dropdown-toggle btn-menu-objetos" data-toggle="dropdown" aria-expanded="false">
-				<%= image_tag("back-menu.png", alt: "back-menu") %>
-				 <span class="caret"></span>
-			</button>
-			<ul id="dibujos" class="dropdown-menu" role="menu">
-				<li><div><%= image_tag("back-01.png", alt: "01", class: 'stages') %></div></li>
-				<li><div><%= image_tag("back-02.png", alt: "02", class: 'stages') %></div></li>
-				<li><div><%= image_tag("back-03.png", alt: "03", class: 'stages') %></div></li>
-				<li><div><%= image_tag("back-06.png", alt: "06", class: 'stages') %></div></li>
-			</ul>
-		</div>
-
-		<div class="col-xs-4 boton btn-group" role="group">
-			<button type="button" class="btn btn-default dropdown-toggle btn-menu-objetos" data-toggle="dropdown" aria-expanded="false">
+		<ul class="nav nav-tabs" role="tablist"> 
+			<li class="btn-seccion-menu active" role="presentation" >
+				<a href="#menu-backgrounds" aria-controls="backgrounds" role="tab" data-toggle="tab">
+					<%= image_tag("back-menu.png", alt: "back-menu") %>
+				</a>
+			</li>
+			<li class="btn-seccion-menu" role="presentation" >
+				<a href="#menu-characters" aria-controls="characters" role="tab" data-toggle="tab">
 				<%= image_tag("char-menu.png", alt: "char-menu") %>
-				<span class="caret"></span>
-			</button>
-			<ul class="dropdown-menu tools-box" role="menu">
+				</a>
+			</li>
+			<li class="btn-seccion-menu" role="presentation" >
+				<a href="#menu-tools" aria-controls="tools" role="tab" data-toggle="tab"> 
+				<%= image_tag("tool-menu.png", alt: "tool-menu") %>
+				</a>
+			</li>
+		</ul>
+		  <div class="tab-content">
+    		<div role="tabpanel" class="tab-pane active" id="menu-backgrounds">
+    			<ul>
+					<li><div><%= image_tag("back-01.png", alt: "01", class: 'stages') %></div></li>
+					<li><div><%= image_tag("back-02.png", alt: "02", class: 'stages') %></div></li>
+					<li><div><%= image_tag("back-03.png", alt: "03", class: 'stages') %></div></li>
+					<li><div><%= image_tag("back-06.png", alt: "06", class: 'stages') %></div></li>
+				</ul>
+    		</div>
+    		<div role="tabpanel" class="tab-pane" id="menu-characters">
+    			<ul>
 				<li>
 					<div class="draggable tools">
 						<div class="delete-button"><%= icon('close') %></div>
@@ -37,15 +46,10 @@
 						<%= image_tag("back-26.png", alt: "girl") %>
 					</div>
 				</li>
-			</ul>
-		</div>
-
-		<div class="col-xs-4 boton btn-group" role="group">
-			<button type="button" class="btn btn-default dropdown-toggle btn-menu-objetos" data-toggle="dropdown" aria-expanded="false">
-				<%= image_tag("tool-menu.png", alt: "tool-menu") %>
-				<span class="caret"></span>
-			</button>
-			<ul class="dropdown-menu tools-box" role="menu">
+				</ul>
+    		</div>
+    		<div role="tabpanel" class="tab-pane" id="menu-tools">
+    			<ul>
 				<li>
 					<div class="draggable tools">
 						<div class="delete-button"><%= icon('close') %></div>
@@ -65,6 +69,7 @@
 					</div>
 				</li>
 			</ul>
-		</div>
+    		</div>
+ 		</div>
 	</div>
 </div>
