@@ -1,6 +1,6 @@
 <section>
 	<div class="row">
-		<%= render "menuObjetos" %>
+		<%= render "books/menuObjetos" %>
 		<div class="col-xs-8">
 			<div class="row">
 				<div class="stage-margin">
@@ -11,6 +11,8 @@
 					<%= form_for [@book, @page] do |p| %>
 	   					<%= p.text_area :content, placeholder:"Escribe aquí tu texto", required: true %>
 	   					<%= p.submit "fin", id: 'savebook', class: 'savebutton' %>
+	   					<%= p.submit "+", id: 'savepage', class: 'savebutton' %>
+
 			<% end %>
 					</div>
 				</div>
@@ -22,14 +24,10 @@
 				<p>Título:</p>
 				<%= @book.title %>
 			</div>
-		<div class="row botones">
-			<button id="previouspage" class="savebutton"><</button>
-			<button id="nextpage" class="savebutton">></button>
-		</div>
-		<div class="row botones">
-			<button id="savepage" class="savebutton">+</button>
-			
-		</div>
+			<div class="row botones">
+				<button id="previouspage" class="savebutton"><</button>
+				<button id="nextpage" class="savebutton">></button>
+			</div>
 		</div>
 	</div>					
 
