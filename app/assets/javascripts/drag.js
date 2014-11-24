@@ -6,7 +6,7 @@
         }
     }
     var addStageElement = function () {
-        $('#stage').append("<div class='stage-element' ><img src='"+this.dataset.element+"' alt='"+this.dataset.id+"'><i class='delete-button fa fa-times'></i></div>");
+        $('#stage').append("<div class='stage-element'> <%= image_tag('"+this.dataset.element+"') %><i class='delete-button fa fa-times'></i></div>");
         $( ".stage-element" ).draggable({ containment: "parent", snap: false});
       }
     $( document ).ready(function() {

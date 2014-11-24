@@ -30,7 +30,7 @@
     			<ul>
 				<li>
 					<div class="draggable tools">
-						<%= image_tag("1.png", alt: "gato") %>
+						<%= image_tag("1.png", alt: "gato", :data => {'element' => '1', 'id' => 'character1'}) %>
 					</div>
 				</li>
 				<li>
@@ -49,19 +49,16 @@
     			<ul>
 				<li>
 					<div class="draggable tools">
-						<%= icon('times-circle-o', '', class: 'delete-button') %>
 						<%= image_tag("4.png", alt: "botas") %>
 					</div>
 				</li>
 				<li>
 					<div class="draggable tools">
-						<%= icon('times-circle-o', '', class: 'delete-button') %>
 						<%= image_tag("6.png", alt: "gorro") %>						
 					</div>
 				</li>
 				<li>
 					<div class="draggable tools">
-						<%= icon('times-circle-o', '', class: 'delete-button') %>
 						<%= image_tag("5.png", alt: "camara") %>
 					</div>
 				</li>

@@ -14,9 +14,7 @@ section{
       display: block;
       position: absolute;
       width: 200px;
-      height: 200px;
-    }
-
+}
 .stage-element:hover{
       opacity: 0.5;
     }
@@ -102,5 +100,10 @@ section{
 	cursor:pointer !important;
 	&:hover{
 		opacity:0.5;
+	}
+}
+.tools{
+	img{
+		width:100px;
 	}
 }
