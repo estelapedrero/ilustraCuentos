@@ -1,3 +1,28 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.cuento-thumbnail{
+	text-list-style:none;
+	padding:0;
+	li{
+		display:inline-block;
+	}
+	a{
+		font-size:20px;
+	}
+}
+.main-page{	
+	background-color:$yellow;
+	width:80%;
+	margin:0;
+}
+.book-links{
+	div{
+		display:inline-block;
+		margin:5px;
+	}
+	font-size:16px;
+	i{
+		font-size:20px;
+	}
+}

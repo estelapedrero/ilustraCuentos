@@ -11,8 +11,8 @@
 					<div id="top-nav" class="col-xs-12">
 						<% if user_signed_in? %>	
 							<div id="book-nav">
-								<%= link_to 'mis cuentos' %>	
-								<%= link_to 'nuevo cuento' %>	
+								<%= link_to 'mis cuentos', books_path %>	
+								<%= link_to 'nuevo cuento', new_book_path %>	
 							</div>
 						<% end %>
 						<div id="info-nav">

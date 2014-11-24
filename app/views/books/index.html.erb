@@ -1,0 +1,21 @@
+<h1>La biblioteca de <%= current_user.name %></h1>
+<ul class="cuento-thumbnail col-xs-12">
+	<% @book.each do |book| %>
+	<li class="col-xs-3">
+		<p><%= book.title %></p>
+		<div class="main-page"></div>
+		<div class="book-links">
+			<div>
+				<%= icon('play-circle-o') %> <%= link_to 'ver', book_path(book) %>
+			</div>
+			<div>
+				<%= icon('paint-brush') %> <%= link_to 'editar', edit_book_path(book) %>
+			</div>
+			<div>
+				<%= icon('trash') %> <%= link_to 'borrar', book_path(book), method: 'delete' %>
+			</div>
+		</div>
+	
+	</li>
+	<% end %>
+</ul>

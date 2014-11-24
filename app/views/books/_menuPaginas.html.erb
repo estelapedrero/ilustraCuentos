@@ -1,10 +1,14 @@
-<div id="pag-menu" class="col-xs-1">páginas
-	<div class="row">
+<div id="pag-menu" class="col-xs-2">	
+	<div class="col-xs-12">
+		<p>Título:</p>
+		<%= @book.title %>
+	</div>
+	<div class="row botones">
 		<button id="previouspage" class="savebutton"><</button>
 		<button id="nextpage" class="savebutton">></button>
 	</div>
-	<div class="row">
+	<div class="row botones">
 		<button id="savepage" class="savebutton">+</button>
-		<button id="savebook" class="savebutton">fin</button>
+		<button id="savebook" class="savebutton"><%= link_to 'fin', books_path %></button>
 	</div>
 </div>	

@@ -1,22 +1,23 @@
 #logo{
+	margin:10px 0;
 	img{
-	width:200px;
+		width:200px;
 	}
 }
 #header{
-	background: $blue;
-	padding:10px 0 5px 5px;
+	background: $navyblue;
 }
 nav{
 	float:right;
-	margin-top: -50px;
+	margin-top: -55px;
 }
 #top-nav{
 	padding: 10px;
 	font-size:18px;
+	margin-right:5px;
 
 	div{
-		background: $navyblue;
+		background: $blue;
 		display: inline-block;
 		color: $yellow;
 		padding:5px;
