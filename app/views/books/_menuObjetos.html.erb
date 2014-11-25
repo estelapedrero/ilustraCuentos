@@ -29,18 +29,18 @@
     		<div role="tabpanel" class="tab-pane" id="menu-characters">
     			<ul>
 				<li>
-					<div class="draggable tools">
-						<%= image_tag("1.png", alt: "gato", :data => {'element' => '1', 'id' => 'character1'}) %>
+					<div class="draggable tools" data-element="/assets/1.png">
+						<%= image_tag("1.png", alt: "gato", :data => {'element' => '/assets/1.png', 'id' => 'character1'}) %>
 					</div>
 				</li>
 				<li>
-					<div class="draggable tools">
-						<%= image_tag("2.png", alt: "boy") %>
+					<div class="draggable tools" data-element="/assets/2.png">
+						<%= image_tag("2.png", alt: "boy", :data => {'element' => '/assets/2.png', 'id' => 'character2'}) %>
 					</div>
 				</li>
 				<li>
-					<div class="draggable tools">
-						<%= image_tag("3.png", alt: "girl") %>
+					<div class="draggable tools" data-element="/assets/3.png">
+						<%= image_tag("3.png", alt: "girl", :data => {'element' => '/assets/3.png', 'id' => 'character3'}) %>
 					</div>
 				</li>
 				</ul>
@@ -48,18 +48,18 @@
     		<div role="tabpanel" class="tab-pane" id="menu-tools">
     			<ul>
 				<li>
-					<div class="draggable tools">
-						<%= image_tag("4.png", alt: "botas") %>
+					<div class="draggable tools" data-element="/assets/4.png">
+						<%= image_tag("4.png", alt: "botas", :data => {'element' => '/assets/4.png', 'id' => 'character4'}) %>
 					</div>
 				</li>
 				<li>
-					<div class="draggable tools">
-						<%= image_tag("6.png", alt: "gorro") %>						
+					<div class="draggable tools" data-element="/assets/6.png">
+						<%= image_tag("6.png", alt: "gorro", :data => {'element' => '/assets/6.png', 'id' => 'character6'}) %>						
 					</div>
 				</li>
 				<li>
-					<div class="draggable tools">
-						<%= image_tag("5.png", alt: "camara") %>
+					<div class="draggable tools" data-element="/assets/5.png">
+						<%= image_tag("5.png", alt: "camara", :data => {'element' => '/assets/5.png', 'id' => 'character5'}) %>
 					</div>
 				</li>
 			</ul>
