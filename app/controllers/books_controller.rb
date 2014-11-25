@@ -11,7 +11,7 @@ class BooksController < ApplicationController
 	def create
 		@book = Book.new book_params
 		if @book.save
-			redirect_to edit_book_path(@book)
+			redirect_to edit_book_page_path(@book)
 		else
 			render 'new'
 		end
@@ -34,6 +34,6 @@ class BooksController < ApplicationController
 
 		private	
 	def book_params
-		params.require(:book).permit(:title)
+		params.require(:book).permit(:title, :id)
 	end
 end
