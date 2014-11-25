@@ -3,6 +3,11 @@
 		<%= render "books/menuObjetos" %>
 		<div class="col-xs-8">
 			<div class="row">
+				<div class="col-xs-12">
+					<p class="book-title">
+					Título: <%= @book.title %>
+					</p>
+				</div>
 				<div class="stage-margin">
 					<div class="wrapper col-xs-12">
 						<div id="stage" class=" main-stage"></div>
@@ -10,25 +15,21 @@
 					<div class="add-text col-xs-12">
 					<%= form_for [@book, @page] do |p| %>
 	   					<%= p.text_area :content, placeholder:"Escribe aquí tu texto", required: true %>
-	   					<%= p.submit "fin", id: 'savebook', class: 'savebutton' %>
-	   					<%= p.submit "+", id: 'savepage', class: 'savebutton' %>
-
-			<% end %>
 					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div id="pag-menu" class="col-xs-2">	
-			<div class="col-xs-12">
-				<p>Título:</p>
-				<%= @book.title %>
-			</div>
-			<div class="row botones">
-				<button id="previouspage" class="savebutton"><</button>
-				<button id="btnjson" class="savebutton">></button>
-			</div>
-		</div>
+		</div>	
+					<div id="pag-menu" class="col-xs-1">
+						<div class="row botones">
+							<%= p.submit "fin", id: 'savebook', class: 'savebutton' %>
+	   						<%= p.submit "+", id: 'savepage', class: 'savebutton' %>	
+						</div>
+						<div class="row botones">
+							<button id="previouspage" class="savebutton"><</button>
+							<button id="btnjson" class="savebutton">></button>
+						</div>
+					</div>
+					<% end %>
 	</div>					
 
 </section>

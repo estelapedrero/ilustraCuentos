@@ -1,5 +1,5 @@
 section{
-	margin-top:15px;
+	margin-top:5px;
 }
 #stage {
 	list-style-type: none;
@@ -21,12 +21,14 @@ section{
       opacity: 0.5;
     }
 #pag-menu {
+	margin-top:300px;
 	color: $yellow;
+	padding-left:0;
 	div{
-		padding:0;
+		padding:10px;
 	}
-	button{
-		margin:2px;
+	button input{
+		margin:5px;
 	}
 	p{
 		text-align:left;
@@ -41,6 +43,7 @@ section{
 	list-style-type: none;
 	font-size:14px;
 	padding:4px;
+	border-radius: 0 0 10px 10px;
 	}
 	li{
 	padding:5px;
@@ -72,7 +75,7 @@ section{
 		font-size:20px;		
 	textarea{
 		color:$navyblue;
-		margin-top:10px;
+		margin-top:6px;
 		width:100%;
 		border-radius:10px;
 		border: solid 3px $orange;
@@ -97,17 +100,14 @@ section{
 }
 .nav-tabs{
 	img{
-		width:40px;
-		height:40px;
+		width:60px;
 	}
 }
 #menu-characters{
 	cursor:pointer !important;
-	&:hover{
-		opacity:0.5;
-	}
 }
 .tools{
+	padding:0 5px;
 	img{
 		width:80px;
 	}

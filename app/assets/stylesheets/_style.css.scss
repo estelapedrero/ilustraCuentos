@@ -34,3 +34,21 @@ input{
 .info-text {
     text-align:center;
 }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+background-color: white;
+border: 1px solid white;
+border-bottom-color: transparent;
+cursor: default;
+}
+.nav-tabs{
+    li{
+        padding:0;
+    }
+    img{
+        widht:60px;
+    }
+}
+.nav-tabs > li > a {
+    margin-right: 0;
+}

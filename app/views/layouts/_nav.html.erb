@@ -3,13 +3,13 @@
 		<div id="header" class="col-xs-12">
 			<div class="row">
 				<div id="logo" class="col-xs-3">
-					<%= link_to image_tag("logo.png"), root_path %>
+				<%= link_to image_tag("logo.png"), root_path %>
 				</div>
 			</div>
 			<div class="row">
 				<nav>
 					<div id="top-nav" class="col-xs-12">
-						<% if user_signed_in? %>	
+						<% if user_signed_in? %>							
 							<div id="book-nav">
 								<%= link_to 'mis cuentos', books_path %>	
 								<%= link_to 'nuevo cuento', new_book_path %>	
@@ -23,10 +23,12 @@
 							<% if user_signed_in? %>
 								<%= link_to current_user.name, edit_user_registration_path  %>
 								<%= link_to 'cerrar sesión', destroy_user_session_path, method: 'DELETE' %>
+								
 							<% else %>
 								<%= link_to 'entra', new_user_session_path %>	
 								<%= link_to 'regístrate', new_user_registration_path %>
 							<% end %>
+
 						</div>	
 					</div>
 				</nav>
