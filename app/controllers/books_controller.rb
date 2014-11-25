@@ -19,8 +19,9 @@ class BooksController < ApplicationController
 	end
 
 	def edit
-		@book = Book.find(params[:id])
-		@page = Page.new
+		@book = Book.find(params[:book_id])
+			@page = @book.pages.find(params[:id])
+		render 'pages/edit'
 	end
 
 	def show
