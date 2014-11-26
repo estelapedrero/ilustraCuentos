@@ -1,9 +1,9 @@
 <div class="col-xs-8 col-xs-offset-2 add-titulo">
 	<h1>Escribe un titulo a tu cuento</h1>
 	<%= form_for @book do |f| %>
-  		<div class="field">
+  		<div class="begin-button">
     		<%= f.text_field :title, autofocus: true %>
   		</div>
-  		<%= f.submit "empieza!" %>
+  		<%= f.submit "empieza!", class: 'begin-push' %>
 	<% end %>
 </div>

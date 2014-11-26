@@ -55,3 +55,13 @@ cursor: default;
 .nav-tabs > li > a {
     margin-right: 0;
 }
+.begin-button{
+    margin:20px 0;
+    input{
+        width:100%;
+    }
+}
+.begin-push{
+    background-color:$yellow;
+    padding:10px;
+}

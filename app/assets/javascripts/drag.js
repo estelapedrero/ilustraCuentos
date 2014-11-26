@@ -21,7 +21,6 @@
         return {top: $top, left: $left, img: $img, background: $background};
 
       }).get();
-      alert(JSON.stringify(stageElements));
       $bookId = $('#book_id').data("bookid");
       $pageId = $('#page_id').data("pageid");
       $.ajaxSetup({
