@@ -11,7 +11,12 @@
 				</div>
 				<div class="stage-margin">
 					<div class="wrapper col-xs-12">
-						<div id="stage" class=" main-stage"></div>
+						<div id="stage" class=" main-stage" style='background-image: url("<%= JSON.parse(@page.info)["bg"] %>");'>
+							<% JSON.parse(@page.info)["elements"].each do |imagen| %>
+							<div class='stage-element' data-src='<%= imagen['img'] %>' style="position: absolute; top: <%= imagen['top'] %>; left: <%= imagen['left'] %>"><i class='delete-button fa fa-times'></i><img src='<%= imagen['img'] %>'></div>
+								
+							<% end %>
+						</div>
 					</div>
 					<div class="add-text col-xs-12">
 					<%= form_for [@book, @page] do |p| %>
