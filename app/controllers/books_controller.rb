@@ -11,20 +11,24 @@ class BooksController < ApplicationController
 	def create
 		@book = Book.new book_params
 		if @book.save
-			redirect_to edit_book_path(@book)
+			@page = @book.pages.create
+			redirect_to edit_book_page_path(@book, @page)
 		else
 			render 'new'
 		end
 	end
 
 	def edit
-		@book = Book.find(params[:id])
-		@page = Page.new
+		@book = Book.find(params[:book_id])
+		@page = @book.pages.find(params[:id])
+		render 'pages/edit'
 	end
 
 	def show
 		@books = Book.all
 		@book = Book.find(params[:id])
+		#@page = @book.pages.find(params[:id])
+
 	end
 
 	def destroy
@@ -34,6 +38,6 @@ class BooksController < ApplicationController
 
 		private	
 	def book_params
-		params.require(:book).permit(:title)
+		params.require(:book).permit(:title, :id)
 	end
 end

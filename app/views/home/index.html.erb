@@ -4,7 +4,7 @@
 			<h2>¡Bienvenid@ <%= current_user.name %>!!</h2>
 			<div class="login centrado">							
 				<h3>¿Qué te apetece hacer hoy?</h3>
-				<div class="welcome-button">
+				<div class="tale-links">
 					<div>
 						<%= icon('paint-brush') %> <%= link_to 'nuevo cuento', new_book_path %>
 					</div>
@@ -33,13 +33,13 @@
 	</div>
 
 	<div id="ilustra" class="row">
-		<div class="col-xs-12 intro">
+		<div class="col-xs-6 intro col-xs-offset-3">
 		<div>
 			<%= image_tag("logo.png") %>
 		</div>
-			<div class="login welcome-button"><%= link_to 'entra', new_user_session_path %></div>
-			<div class="login welcome-button"><%= link_to 'registrate', new_user_registration_path %></div>
-			<div class="login welcome-button"><%= link_to 'explora' %></div>
+			<div class="welcome-button"><%= link_to 'entra', new_user_session_path %></div>
+			<div class="welcome-button"><%= link_to 'registrate', new_user_registration_path %></div>
+			<div class="welcome-button"><%= link_to 'explora' %></div>
 		
 		<a href="#top-nav"><%= icon('chevron-circle-up') %></a>
 		</div>
