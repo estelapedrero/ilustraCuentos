@@ -20,6 +20,8 @@ class PagesController < ApplicationController
 	def edit
 			@book = Book.find(params[:book_id])
 			@page = @book.pages.find(params[:id])
+			@next_page = @book.pages.where("id > ?", params[:id]).first
+			@prev_page = @book.pages.where("id < ?", params[:id]).first
 
 	end
 
