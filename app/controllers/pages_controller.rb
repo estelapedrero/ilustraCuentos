@@ -36,6 +36,7 @@ class PagesController < ApplicationController
 		@book = Book.find(params[:book_id])
 		@page = @book.pages.find(params[:id]).update_attributes page_params
 		
+		
 		redirect_to book_path(@book)
 	end
 

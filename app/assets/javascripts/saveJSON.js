@@ -1,4 +1,3 @@
-
     var getJson = function() {
       var stageElements = $('.stage-element').map( function( ) {
           $top = $(this).css("top");
