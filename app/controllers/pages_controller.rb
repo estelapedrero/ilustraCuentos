@@ -12,14 +12,15 @@ class PagesController < ApplicationController
 
 	def new
 		@book = Book.find(params[:book_id])
-		@page = Page.new
-		render 'edit'
+		@page = @book.pages.create
+		redirect_to edit_book_page_path(@book, @page)
 	end
 
 
 	def edit
 			@book = Book.find(params[:book_id])
 			@page = @book.pages.find(params[:id])
+
 	end
 
 	def show
