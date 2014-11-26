@@ -20,13 +20,15 @@ class BooksController < ApplicationController
 
 	def edit
 		@book = Book.find(params[:book_id])
-			@page = @book.pages.find(params[:id])
+		@page = @book.pages.find(params[:id])
 		render 'pages/edit'
 	end
 
 	def show
 		@books = Book.all
 		@book = Book.find(params[:id])
+		#@page = @book.pages.find(params[:id])
+
 	end
 
 	def destroy

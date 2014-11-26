@@ -1,15 +1,21 @@
 class PagesController < ApplicationController
+	require 'json'
 	def create
 		@book = Book.find(params[:book_id])
 		@page = @book.pages.create page_params
-		if params["commit"] == "+"
-			redirect_to edit_book_page_path(@book, @page)
-
+		if @page.save && params["commit"] == "+"
+			redirect_to new_book_page_path(@book, @page)
 		else
-			redirect_to books_path
-
+			redirect_to book_path(@book)
 		end
 	end
+
+	def new
+		@book = Book.find(params[:book_id])
+		@page = Page.new
+		render 'edit'
+	end
+
 
 	def edit
 			@book = Book.find(params[:book_id])
@@ -25,11 +31,17 @@ class PagesController < ApplicationController
 
 	def update
 		@book = Book.find(params[:book_id])
-		redirect_to books_path  
+		@page = @book.pages.find(params[:id]).update_attributes page_params
+		redirect_to book_path(@book)
+	end
+
+	def requireJSON
+		source = 'books/pages'
+		@info = JSON.parse(JSON.load(source));
 	end
 
 		private	
 	def page_params
-		params.require(:page).permit(:content)
+		params.require(:page).permit(:content, :info)
 	end
 end
