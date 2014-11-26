@@ -9,13 +9,11 @@
 <div class="row">
 	<!-- <%= icon('chevron-circle-left', '', class: 'col-xs-1') %> -->
 	<div class="col-xs-10 col-xs-offset-1 fullPage">
-
-
-
 		<% @book.pages.each do |p| %>
-				<p><%= p.info %></p>
-				<hr>
-				<div>
+			<div style="position: relative; background-image: url('<%= JSON.parse(p.info)["bg"] %>'); width:900px; height:446px;">
+				<% JSON.parse(p.info)["elements"].each do |imagen| %>
+					<img src="<%= imagen['img'] %>" style="position: absolute; top: <%= imagen['top'] %>; left: <%= imagen['left'] %>" >
+				<% end %>
 			</div>
 				
 				<p class="textoCuento"><%= p.content %></p>
