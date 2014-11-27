@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-	require 'json'
+require 'json'
 	def create
 		@book = Book.find(params[:book_id])
 		@page = @book.pages.create page_params

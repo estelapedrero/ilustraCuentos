@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   	if @user.save
   		flash[:success] = "Comienza la aventura!"
   	else
+      flash[:error] = "El usuario no existe.¡Registrate!"
   		render 'registro'
   	end
   end

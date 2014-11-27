@@ -9,7 +9,7 @@ class BooksController < ApplicationController
 	end
 
 	def create
-		@book = Book.new book_params
+	  @book = current_user.books.new book_params 
 		if @book.save
 			@page = @book.pages.create
 			redirect_to edit_book_page_path(@book, @page)
@@ -26,7 +26,7 @@ class BooksController < ApplicationController
 
 	def show
 		@books = current_user.books.all
-		@book = Book.find(params[:id])
+		@book = @books.find(params[:id])
 		#@page = @book.pages.find(params[:id])
 
 	end

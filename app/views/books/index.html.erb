@@ -1,6 +1,6 @@
 <h1>La biblioteca de <%= current_user.name %></h1>
 <ul class="cuento-thumbnail col-xs-12">
-	<% @book.each do |book| %>
+	<% current_user.books.each do |book| %>
 	<li class="col-xs-3">
 		<p><%= book.title %></p>
 		<div class="main-page"></div>

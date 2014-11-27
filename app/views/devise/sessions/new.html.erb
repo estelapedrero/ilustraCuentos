@@ -2,8 +2,17 @@
   <div class=" col-xs-4 col-xs-offset-4">
 <h2>¡ ilustra!</h2>
 
+<% flash.each do |name, msg| %>
+  <div>
+    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+  </div>
+<% end %> 
+
 <div class="login">
+
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
