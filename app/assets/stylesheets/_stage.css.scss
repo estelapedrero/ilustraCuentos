@@ -13,9 +13,7 @@ section{
 .stage-element{
       display: block;
       position: absolute;
-      img{
-      	width: 120px;
-      }
+
 }
 .stage-element:hover{
       opacity: 0.5;
@@ -86,7 +84,6 @@ section{
 }
 
 .stages{
-	height:100px;
 	width: 180px;
 }
 .savebutton{

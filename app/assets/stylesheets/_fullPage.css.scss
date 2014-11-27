@@ -1,8 +1,9 @@
 .fullPage{
 	div{
-		margin:0 auto;
+		margin:15px auto;
 	}
 	h1{
+		font-size:36px;
 		text-align:center;
 		p{
 			font-size:18px;
@@ -10,6 +11,11 @@
 	}
 }
 .textoCuento{
+	margin-top:20px;
 	text-align:center;
-	font-size:21px;
+	font-size:24px;
+}
+.editarCuento{
+	font-size:16px;
+	text-align:center;
 }
