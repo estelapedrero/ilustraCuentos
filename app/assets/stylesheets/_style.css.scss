@@ -28,6 +28,7 @@ input{
     }  
     img{
         width:600px;
+        margin-top:100px;
     }
     a{
         display:block;
@@ -51,9 +52,6 @@ input{
 	}
 }
 
-.info-text {
-    text-align:center;
-}
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
 background-color: white;
