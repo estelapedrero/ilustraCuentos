@@ -10,3 +10,5 @@
         $( ".stage-element" ).draggable({ containment: "parent", snap: false});
       }
 
+      $( ".stage-element" ).draggable({ containment: "parent", snap: false});
+

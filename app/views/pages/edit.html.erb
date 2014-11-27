@@ -11,7 +11,18 @@
 				</div>
 				<div class="stage-margin">
 					<div class="wrapper col-xs-12">
-						<div id="stage" class=" main-stage"></div>
+						<% unless @page.info.blank? %>
+							<div id="stage" class=" main-stage" style='background-image: url("<%= JSON.parse(@page.info)["bg"] %>");'>
+								<% JSON.parse(@page.info)["elements"].each do |imagen| %>
+								<div class='stage-element' data-src='<%= imagen['img'] %>' style="top: <%= imagen['top'] %>; left: <%= imagen['left'] %>"><i class='delete-button fa fa-times'></i><img src='<%= imagen['img'] %>'></div>
+									
+								<% end %>
+							</div>
+						<% else %>
+							<div id="stage" class=" main-stage" >
+							</div>
+
+						<% end %>
 					</div>
 					<div class="add-text col-xs-12">
 					<%= form_for [@book, @page] do |p| %>
@@ -27,10 +38,10 @@
 						</div>
 						<div class="row botones">
 							<% if @prev_page %>
-								<%= link_to "<button id='previouspage-btn' class='savebutton'><</button>".html_safe, edit_book_page_path(@book, @prev_page) %>
+								<%= p.submit "<", id: 'prevpage', class: 'savebutton' %>			
 							<% end %>
 							<% if @next_page %>
-								<%= link_to "<button id='nextpage-btn' class='savebutton'>></button>".html_safe, edit_book_page_path(@book, @next_page) %>
+								<%= p.submit ">", id: 'nextpage', class: 'savebutton' %>
 							<% end %>
 						</div>
 

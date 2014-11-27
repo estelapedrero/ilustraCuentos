@@ -13,6 +13,7 @@ class PagesController < ApplicationController
 	def new
 		@book = Book.find(params[:book_id])
 		@page = @book.pages.create
+
 		redirect_to edit_book_page_path(@book, @page)
 	end
 
@@ -34,8 +35,19 @@ class PagesController < ApplicationController
 
 	def update
 		@book = Book.find(params[:book_id])
+		@next_page = @book.pages.where("id > ?", params[:id]).first
+		@prev_page = @book.pages.where("id < ?", params[:id]).first
 		@page = @book.pages.find(params[:id]).update_attributes page_params
-		redirect_to book_path(@book)
+		if params["commit"] == "+"
+			@page = @book.pages.create
+			redirect_to edit_book_page_path(@book, @page)
+		elsif params["commit"] == "<" && @prev_page
+			redirect_to edit_book_page_path(@book, @prev_page)
+		elsif params["commit"] == ">" && @next_page
+			redirect_to edit_book_page_path(@book, @next_page)
+		else
+			redirect_to book_path(@book)
+		end
 	end
 
 	def requireJSON
