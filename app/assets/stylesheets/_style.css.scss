@@ -19,12 +19,29 @@ input{
 .intro{
     text-align:center;
     height:500px;
+    div{
+        margin-bottom:50px;
+    }
     h1{
         font-size:90px;
+        margin:190px;
     }  
     img{
         width:600px;
     }
+    a{
+        display:block;
+    }
+}
+#crea {
+    background-image: url('intro-36.png');
+}
+#juega {
+    background-image: url('intro-36.png');
+    height:600px;
+}
+#ilustra{
+    height:650px;
 }
 .btn{
 	color:$navyblue;
