@@ -2,7 +2,7 @@
       var stageElements = $('.stage-element').map( function( ) {
           $top = $(this).css("top");
           $left = $(this).css("left");
-          $img = $(this).data("src");
+          $img = $(this).getAttribute("src");
         return {top: $top, left: $left, img: $img};
       }).get();
       var $bookId = $('#book_id').data("bookid");
