@@ -7,7 +7,7 @@
     }
     var addStageElement = function (event) {
 console.log(event.target)
-        $('#stage').append("<div class='stage-element' data-src='"+this.dataset.element+"'><i class='delete-button fa fa-times'></i><img src='"+event.target.getAttribute("src")+"'></div>");
+        $('#stage').append("<div class='stage-element' data-src='"+event.target.getAttribute('src')+"'><i class='delete-button fa fa-times'></i><img src='"+event.target.getAttribute("src")+"'></div>");
         $( ".stage-element" ).draggable({ containment: "parent", snap: false});
       }
 
